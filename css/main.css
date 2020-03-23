@@ -36,6 +36,49 @@ header{
     justify-content: space-around;
 }
 
+header .logo{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+header .logo a{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo .img_conteiner{
+    width: 90px;
+}
+
+header .logo .img_conteiner img{
+    width: 100%;
+}
+
+header .logo .titulos_logo{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+header .logo .titulos_logo .parte_titulo_logo{
+    padding-left: 10px;
+    display: flex;
+}
+
+header .logo .titulos_logo .parte_titulo_logo:nth-child(1) span{
+    font-size: 20px;
+    font-weight: bolder;
+    flex: 1;
+}
+
+header .logo .titulos_logo .parte_titulo_logo:nth-child(2) span{
+    font-size: 15px;
+}
+
 .conteudo_geral{
     max-width: 1376px;
     background-color: white;
@@ -43,6 +86,7 @@ header{
     margin-right: auto;
     margin-left: auto;
     display: flex;
+    min-height: 100vh;
     padding-left: 20px;
     padding-right: 20px;
     flex-direction: column;
@@ -331,6 +375,161 @@ header #menu-inputs input[type="button"]:hover{
     color: gray;
     height: 100%;
     padding-top: 20px;
-    border: 1px solid red;
     font-size: 21px;
+}
+
+.prod_info{
+    flex: 1;
+}
+
+.farmacia_single{
+    align-items: center;
+    justify-content: center;
+}
+
+.farmacia_single .opt_list{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.farmacia_single .opt_list li{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.farmacia_single .opt_list .add_prod{
+    flex: 1;
+}
+
+.farmacia_single .opt_list .edit_prod{
+    flex: 1;
+}
+
+.farmacia_single .opt_list .rem_prod{
+    flex: 1;
+}
+
+.pesquisas_farm{
+    margin-bottom: 3rem;
+    display: flex;
+}
+
+.pesquisas_farm select{
+    height: 35px;
+    border: 0.3px solid #c0c0c0;
+    flex: 1;
+    max-width: 600px;
+}
+
+.pesquisas_farm input{
+    height: 35px;
+    border: 0.3px solid #c0c0c0;
+    flex: 1;
+    min-width: 400px;
+    padding-left: 7px;
+}
+
+.pesquisas_farm input[type="submit"]{
+    height: 35px;
+    border: 0.3px solid #c0c0c0;
+    flex: 1;
+    color: white;
+    min-width: 100px;
+    background-color: var(--primary-color);
+}
+
+.post_informations_plus .bloco_conteiner .bloco_singular .prod_info .opt_list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    flex: 1;
+    padding-right: 60px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+#login_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner_login .inputs_conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    height: 270px;
+}
+
+.conteiner_login .inputs_conteiner input{
+    height: 40px;
+    border: 0.3px solid #cecece;
+    padding-left: 7px;
+}
+
+.conteiner_login .inputs_conteiner span{
+    text-align: center;
+    font-size: 12px;
+}
+
+.conteiner_login .inputs_conteiner span a{
+    color: blue;
+}
+
+.conteiner_login .inputs_conteiner input[type="submit"]{
+    background-color: var(--primary-color);
+    color: white;
+    border: 0.3px solid #cecece;
+}
+
+#login_form .logo{
+    width: 350px;
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#login_form .logo a{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#login_form .logo .img_conteiner{
+    width: 140px;
+}
+
+#login_form .logo .img_conteiner img{
+    width: 100%;
+}
+
+#login_form .logo .titulos_logo{
+    display: flex;
+    width: 110px;
+    flex-direction: column;
+}
+
+#login_form .logo .titulos_logo .parte_titulo_logo{
+    padding-left: 10px;
+    display: flex;
+}
+
+#login_form .logo .titulos_logo .parte_titulo_logo:nth-child(1) span{
+    font-size: 37px;
+    font-weight: bolder;
+    flex: 1;
+}
+
+#login_form .logo .titulos_logo .parte_titulo_logo:nth-child(2) span{
+    font-size: 20px;
 }

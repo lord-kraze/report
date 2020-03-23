@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+    <head> 
+        <title>S.O.S Angola</title> 
+        <meta charset='utf-8' /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
+        <meta name='author' content='Okusindja Almeida, Preencham aqui' /> 
+        <meta name='description' content='Gestão dos laboratótios do ISPTEC' /> 
+        <meta name='keywords' content='GestLab Gestão Laboratório' /> 
+        <meta property='og:image' content='img/logo.png' /> 
+        <meta property='og:title' content=GestLab /> 
+        <meta property='og:description' content='Gestão dos laboratótios do ISPTEC' /> 
+        <base href="<?= $GLOBALS['referer'] ?>"> <link rel="apple-touch-icon" href="icon.png"> 
+        <link rel="manifest" href="site.webmanifest"> <link rel='icon' type='image/png' href='img/logo.png' /> 
+        <link rel="stylesheet" href="css/dist/font-awesome/css/all.css"> 
+        <link rel="stylesheet" href="css/main.css"> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <div class="img_conteiner">
+                        <img src="img/logo-rep2.png">
+                    </div>
+                    <div class="titulos_logo">
+                        <div class="parte_titulo_logo">
+                            <span>S.O.S Mundo</span>
+                        </div>
+                        <div class="parte_titulo_logo">
+                            <span>Report</span>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><div class="linha_li_menu"></div><a  id="inicio" onclick="headerLink(this);">Início</a></li>
+                    <li><div class="linha_li_menu"></div><a id="covid19" onclick="headerLink(this);">COVID-19</a></li>
+                    <li><div class="linha_li_menu"></div><a id="sintomas" onclick="headerLink(this);">Sintomas</a></li>
+                     <li><div class="linha_li_menu"></div><a id="precausoes" onclick="headerLink(this);">Precauções</a></li>
+                    <li><div class="linha_li_menu"></div><a id="sobre" onclick="headerLink(this);">Sobre</a></li>
+                </ul>
+            </nav>
+            <ul id="menu-inputs">
+                <li><input type="search" placeholder="Pesquisar"> <button type="submit"><i class="fas fa-search"></i></button></li>
+                <li><input type="button" value="Iniciar Sessão" onClick="window.location.href='painel.html'"></li>
+            </ul>
+        </header>
+
+        <div id="conteudo">
+            <div class="conteudo_geral" >
+                <form action="user.html" id="login_form">
+                    <div class="logo">
+                        <a href="index.html">
+                            <div class="img_conteiner">
+                                <img src="img/logo-farm.png">
+                            </div>
+                            <div class="titulos_logo">
+                                <div class="parte_titulo_logo">
+                                    <span>Login</span>
+                                </div>
+                                <div class="parte_titulo_logo">
+                                    <span>Farmácia</span>
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </div>
+                    <div class="conteiner_login">
+                        <div class="inputs_conteiner">
+                            <input placeholder="Email">
+                            <input placeholder="Password" type="password">
+                            <span>Não consigo fazer login <a>Clique aqui</a></span>
+                            <input type="submit" onClick="window.location.href='user.html'" value="Iniciar sessão">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    
+    </body>
+
+</html>
